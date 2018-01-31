@@ -13,14 +13,14 @@ source:
     - https://cran.r-project.org/src/contrib/geoR_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/geoR/geoR_{{ version }}.tar.gz
   sha256: ebae352db07fa7b8e26b07b05596aa96f5e82d67bd1a35e2607a91123a32c9eb
+  patches:
+    # https://github.com/rocker-org/rocker/issues/213#issuecomment-278909502
+    - no_tcltk.patch
 
 build:
   number: 0
   script: R CMD INSTALL --build .
-  # Skipping Windows:
-  # error: Tcl/Tk support files were not installed
-  # ERROR: lazy loading failed for package 'geoR'
-  skip: True  # [win]
+  skip: True  # [win32]
   rpaths:
     - lib/R/lib/
     - lib/
