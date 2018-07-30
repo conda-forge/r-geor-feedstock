@@ -14,14 +14,16 @@ Summary: Geostatistical analysis including traditional, likelihood-based and Bay
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-geor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-geor-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-geor-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-geor-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-geor-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-geor-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-geor-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-geor-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-geor-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-geor-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-geor-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-geor-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-geor/badges/version.svg)](https://anaconda.org/conda-forge/r-geor)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-geor/badges/downloads.svg)](https://anaconda.org/conda-forge/r-geor)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--geor-green.svg)](https://anaconda.org/conda-forge/r-geor) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-geor.svg)](https://anaconda.org/conda-forge/r-geor) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-geor.svg)](https://anaconda.org/conda-forge/r-geor) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-geor.svg)](https://anaconda.org/conda-forge/r-geor) |
 
 Installing r-geor
 =================
