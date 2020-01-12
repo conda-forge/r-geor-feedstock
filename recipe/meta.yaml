@@ -1,4 +1,4 @@
-{% set version = '1.7-5.2.1' %}
+{% set version = "1.7-5.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,14 +11,14 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/geoR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/geoR/geoR_{{ version }}.tar.gz
-  sha256: 3895e49c005a5745738d190ccaad43bb0aa49c74465d4d0b4dd88c5850ed63b9
+  sha256: 07cc0c000473fac1068358fa0d3be273d75e5b3bd48a74df191743867db2ac80
   patches:
     # https://github.com/rocker-org/rocker/issues/213#issuecomment-278909502
     - no_tcltk.patch
 
 build:
   merge_build_host: True  # [win]
-  number: 1003
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
