@@ -1,4 +1,4 @@
-{% set version = "1.9-3" %}
+{% set version = "1.9-4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/geoR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/geoR/geoR_{{ version }}.tar.gz
-  sha256: 993e7d6d7a1437e91338532354cc5789864aa76c27767928ee2bc76030c2e01e
+  sha256: ae9d977cebe0f93b2593542f8d6d060467984dcf174e84ba632307c035d7ebbd
   patches:
     # https://github.com/rocker-org/rocker/issues/213#issuecomment-278909502
     - no_tcltk.patch
