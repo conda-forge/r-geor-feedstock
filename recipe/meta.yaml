@@ -15,7 +15,7 @@ source:
     - no_tcltk.patch
 
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -31,6 +31,11 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-mass                       # [build_platform != target_platform]
+    - r-randomfields               # [build_platform != target_platform]
+    - r-sp                         # [build_platform != target_platform]
+    - r-splancs                    # [build_platform != target_platform]
   host:
     - r-base
     - r-mass
@@ -53,7 +58,6 @@ about:
   home: http://www.leg.ufpr.br/geoR
   license: GPL-2.0-or-later
   summary: Geostatistical analysis including variogram-based, likelihood-based and Bayesian methods. Software companion for Diggle and Ribeiro (2007) <doi:10.1007/978-0-387-48536-2>.
-  license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
