@@ -15,7 +15,7 @@ source:
     - no_tcltk.patch
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -33,19 +33,16 @@ requirements:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
     - r-mass                       # [build_platform != target_platform]
-    - r-randomfields               # [build_platform != target_platform]
     - r-sp                         # [build_platform != target_platform]
     - r-splancs                    # [build_platform != target_platform]
   host:
     - r-base
     - r-mass
-    - r-randomfields
     - r-sp
     - r-splancs
   run:
     - r-base
     - r-mass
-    - r-randomfields
     - r-sp
     - r-splancs
 
